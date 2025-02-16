@@ -1,0 +1,36 @@
+.main-container {
+  margin-top: 8rem;
+}
+.footer-icons {
+  margin-left: 15rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  color: gray;
+  /* margin-top: 4rem; */
+  margin-right: 6rem;
+}
+.footer-container div {
+  line-height: 1.8;
+}
+.footer-service {
+  margin-left: 15rem;
+  border: 1px solid white;
+  width: 7rem;
+  text-align: center;
+  color: grey;
+  padding: 5px 5px;
+  margin-top: 1rem;
+}
+.footer-info p {
+  text-align: center;
+  color: grey;
+}

@@ -1,0 +1,33 @@
+.header-container {
+  color: white;
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 18px; */
+  padding: 0 30px;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 1rem;
+}
+.header-left img {
+  width: 100px;
+}
+
+.header-left nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
