@@ -1,8 +1,8 @@
-// aa2c52b10f993ac6c3088f03a31602d6
-
+// eslint-disable-next-line no-unused-vars
 import axios from "axios";
 
-const instance = axios.create({
+const axiosInstance = axios.create({
   baseURL: import.meta.env.VITE_BASE_URL,
 });
-export default instance;
+
+export default axiosInstance;
