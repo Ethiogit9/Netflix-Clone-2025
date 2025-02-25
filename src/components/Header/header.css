@@ -32,3 +32,22 @@
   align-items: center;
   gap: 1rem;
 }
+.menu-icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .header-container {
+    height: 8vh;
+  }
+  .header-left img {
+    width: 80px;
+  }
+  .header-left nav ul {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+}

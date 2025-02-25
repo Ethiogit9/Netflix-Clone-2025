@@ -1,17 +1,36 @@
 import { useEffect, useState } from "react";
-import axios from "../../util/axios";
+import axios from "../util/axios";
 // import requests from "../../util/requests";
 import "./banner.css";
+import requests from "../util/requests";
 
 const Banner = () => {
   const [movie, setMovie] = useState({});
+  /*
+   {
+      "adult": false,
+      "backdrop_path": "/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
+      "genre_ids": [10759, 9648, 18],
+      "id": 93405,
+      "origin_country": [
+        "KR"
+      ],
+      "original_language": "ko",
+      "original_name": "오징어 게임",
+      "overview": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
+      "popularity": 870.074,
+      "poster_path": "/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg"
+      "first_air_date": "2021-09-17",
+      "name": "Squid Game",
+      "vote_average": 7.9,
+      "vote_count": 15466
+    },
+  */
   // https://api.themoviedb.org/3/discover/tv?api_key=950e969ccbc798833af2c6292a2fc253&with_networks=123
   useEffect(() => {
     (async () => {
       try {
-        const request = await axios.get(
-          "https://api.themoviedb.org/3/discover/tv?api_key=aa2c52b10f993ac6c3088f03a31602d6&with_networks=213"
-        );
+        const request = await axios.get(requests.fetchNetflixOriginals);
         setMovie(
           request.data.results[
             Math.floor(Math.random() * request.data.results.length)
@@ -31,7 +50,7 @@ const Banner = () => {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: ` url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
+        backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         height: "100vh",

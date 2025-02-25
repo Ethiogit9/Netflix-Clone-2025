@@ -1,0 +1,8 @@
+
+
+       steps to deploy our site to github            
+  1- npm install gh-pages--save-dev                
+  2- update vite.config.js => base:'/your repo-name/',
+  3- update package.json =>"predeploy":"npm run build",
+     "deploy":"gh-pages"-d dist
+  4- npm run deploy

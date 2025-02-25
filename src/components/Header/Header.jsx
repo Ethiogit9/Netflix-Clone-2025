@@ -5,6 +5,7 @@ import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import LogoImg from "../../assets/images/Logo_Netflix_HD_Vector_illustrator__ai__-removebg-preview.png";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
 const Header = () => {
   return (
@@ -29,6 +30,9 @@ const Header = () => {
         <CircleNotificationsIcon />
         <AccountCircleIcon />
         <KeyboardArrowDownIcon />
+      </div>
+      <div className="menu-icon">
+        <MenuOutlinedIcon />
       </div>
     </header>
   );

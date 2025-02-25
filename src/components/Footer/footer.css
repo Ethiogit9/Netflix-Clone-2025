@@ -34,3 +34,35 @@
   text-align: center;
   color: grey;
 }
+@media screen and (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: gray;
+    margin-top: 4rem;
+    margin-right: 6rem;
+  }
+  .footer-icons {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    color: white;
+  }
+  .footer-service {
+    margin-left: 0;
+    border: 1px solid white;
+    width: 7rem;
+    text-align: center;
+    color: grey;
+    padding: 5px 5px;
+    margin-top: 1rem;
+  }
+  .footer-info p {
+    text-align: center;
+    color: grey;
+  }
+}
